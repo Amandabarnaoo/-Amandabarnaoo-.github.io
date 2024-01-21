@@ -1,0 +1,277 @@
+.slideshow-container {
+    position: relative;
+    z-index: 1;
+
+}
+
+.sponsors {
+    position: relative;
+    top: 80px;
+    margin-bottom: 50px;
+    /* Aligns to the bottom of the slideshow-container */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    max-width: 70%;
+}
+
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    left: 3.5vw;
+    z-index: 3;
+    max-width: 11vw;
+    margin-bottom: 3vw;
+}
+
+.header {
+    position: absolute;
+    top: 1.5vw;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    justify-content: space-between;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    margin-right: 5vw;
+}
+
+.subscribe-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    margin: 0;
+    margin-bottom: 3vw;
+}
+
+.fb {
+    max-width: 2.8vw;
+    margin-left: 1vw;
+    margin-bottom: 3vw;
+}
+
+.subscribe-button:hover {
+    background-color: #5f5555;
+    /* Darker shade of red on hover */
+}
+
+.navbar {
+    margin-left: 10vw;
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin-top: 0;
+    margin-left: 4.5vw;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 1.5vw;
+    margin-top: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+}
+
+
+.red-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3vw;
+    /* adjust height as needed */
+    background-color: #ca242c;
+    z-index: 10;
+    margin-top: 3vw;
+    /* ensures it stays on top */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    /* Full height of the red bar */
+    padding: 0 3.5vw;
+    position: relative;
+    z-index: 11;
+    /*
+    /* Adjust padding as needed */
+}
+
+.table {
+    width: 100%;
+
+    margin-left: 10vw;
+
+    margin: 20px auto;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+
+    background-color: #1c1c1c;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.table thead tr {
+    background-color: #ca242c;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1vw;
+
+}
+
+.table td {
+    font-weight: lighter;
+}
+
+.table th,
+.table td {
+    padding: 12px 3vw;
+    color: white;
+    font-size: 1vw;
+    /* Text color for readability on dark background */
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #474747;
+    /* Subtle border for rows */
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #2a2a2a;
+    /* Alternating row color for zebra-striping */
+}
+
+.table tbody {
+    border-bottom: 2px solid #ca242c;
+    /* Stronger line at the end */
+    border-radius: 0 0 15px 15px;
+    /* Round bottom corners */
+}
+
+.table tbody tr:hover {
+    background-color: #333333;
+    /* Hover effect for rows */
+}
+
+.table-title {
+    text-align: center;
+    color: white;
+    /* Choose color that fits your theme */
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 40px;
+    /* Space between title and table */
+    margin-top: 80px;
+}
+
+
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 90vw;
+    opacity: 0.2;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Aligns items to the top */
+    margin: 20px 0;
+}
+
+.table-container {
+    flex: 0 0 40%;
+    margin-left: 15vw;
+}
+
+
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        /* Stack elements on small screens */
+    }
+
+    .table-container,
+    .text-container {
+        flex: 0 0 100%;
+        /* Each takes full width on small screens */
+    }
+
+    .additional-text-container {
+        flex: 0 0 100%;
+        margin-top: 20px;
+    }
+}
+
+.additional-text-container {
+    flex: 1;
+    padding: 20px;
+    margin-right: 15vw;
+    border-spacing: 0;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+    text-align: center;
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: 5vw;
+    margin-top: 20px;
+    font-weight: lighter;
+    /* Adjust the margin as per the design */
+}
+
+.first-container {
+    flex: 1;
+    /* Takes the remaining space */
+    padding: 20px;
+    border-collapse: separate;
+    margin-right: 15vw;
+    border-spacing: 0;
+    font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+    text-align: center;
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 15px;
+    margin-left: 5vw;
+    overflow: hidden;
+    margin-top: 120px;
+}

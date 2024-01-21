@@ -1,0 +1,153 @@
+.slideshow-container {
+    position: relative;
+    z-index: 1;
+}
+
+.sponsors {
+    max-width: 90%;
+    margin-left: 5vw;
+    margin-right: auto;
+    margin-top: 5vw;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    left: 3.5vw;
+    z-index: 3;
+    max-width: 11vw;
+    margin-bottom: 3vw;
+}
+
+/* New Styles for Navigation */
+.header {
+    position: absolute;
+    top: 1.5vw;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    justify-content: space-between;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    margin-right: 5vw;
+}
+
+.subscribe-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    margin: 0;
+    margin-bottom: 3vw;
+}
+
+.fb {
+    max-width: 2.8vw;
+    margin-left: 1vw;
+    margin-bottom: 3vw;
+}
+
+.subscribe-button:hover {
+    background-color: #5f5555;
+    /* Darker shade of red on hover */
+}
+
+.navbar {
+    margin-left: 10vw;
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin-top: 0;
+    margin-left: 4.5vw;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 1.5vw;
+    margin-top: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+}
+
+
+.red-bar {
+    position: relative;
+    top: 3vw;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    height: 3vw;
+    background-color: #ca242c;
+    z-index: 2;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    /* Full height of the red bar */
+    padding: 0 3.5vw;
+    /* Adjust padding as needed */
+}
+
+
+.image-grid {
+    margin-top: 3vw;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.image-grid td {
+    vertical-align: top;
+    padding-right: 40vw;
+    padding: 2vw;
+}
+
+.image img {
+    width: 25vw;
+    height: auto;
+}
+
+.title {
+    color: white;
+    margin-top: 10vw;
+    font-family: 'Raleway', serif;
+    font-weight: lighter;
+    font-size: 1.3vw;
+    margin-left: 6.5vw;
+}
+
+#backgroundVideo {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 70vw;
+    opacity: 0.2;
+}
